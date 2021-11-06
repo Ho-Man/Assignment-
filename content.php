@@ -54,28 +54,28 @@
             <div class="row">
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/Beido">
-                            <h5><a href="#">The Beatles</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/paimon.jpg">
+                            <h5><a href="#">Figure Klee</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/kkle2">
-                            <h5><a href="#">Queen</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/kkee2">
+                            <h5><a href="#">Fugure Ganyu</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/Michaelalbumcover.jpg">
-                            <h5><a href="#">Michael Jackson</a></h5>
+                            <h5><a href="#">Figure Mona</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/eltonjohnalbum.jpg">
-                            <h5><a href="#">Elton John</a></h5>
+                            <h5><a href="#">Figure Kokomi</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/pinkfloydalbum.jpg">
-                            <h5><a href="#">Pink Floyd</a></h5>
+                            <h5><a href="#">Figure Ninja</a></h5>
                         </div>
                     </div>
                 </div>

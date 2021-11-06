@@ -34,10 +34,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="img/hero/backgroundvinyl.jpg">
+                    <div class="hero__item set-bg" data-setbg="img/Background.jpg">
                         <div class="hero__text">
                             <span>NEW ON</span>
-                            <h2>Tune <br />Source</h2> 
+                            <h2>ATN <br />Shop</h2> 
                             
                             <a href="?page=shop-grid" class="primary-btn">SHOP NOW</a>
                         </div>
@@ -54,8 +54,8 @@
             <div class="row">
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/the_abbey_road.jpg">
-                            <h5><a href="#">The Beatles</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/paimon.jpg">
+                            <h5><a href="#">Paimon Figure</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -87,7 +87,7 @@
                 if(isset( $_POST['btnSearch']))
                 {
                     $search = $_POST['txtSearch'];
-                    $result = mysqli_query($conn,"SELECT Product_ID, Product_Name, Price, Pro_qty, Pro_image, Cat_Name 
+                    $result = pg_query($conn,"SELECT Product_ID, Product_Name, Price, Pro_qty, Pro_image, Cat_Name 
                     from product a, category b 
                     where a.Cat_ID = b.Cat_ID AND Product_Name like '%$search%' order by Pro_image desc");
                     ?>
@@ -102,7 +102,7 @@
                             </div>
                             <div class="row featured__filter">
                     <?php
-                    while($row=mysqli_fetch_array($result, MYSQLI_ASSOC)) { 
+                    while($row=pg_fetch_array($result, PGSQL_ASSOC)) { 
                     ?>
                    
                                 <div class="col-lg-3 col-md-4 col-sm-6 mix ">
