@@ -34,10 +34,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="img/hero/backgroundvinyl.jpg">
+                    <div class="hero__item set-bg" data-setbg="img/hero/Background.jpg">
                         <div class="hero__text">
                             <span>NEW ON</span>
-                            <h2>Tune <br />Source</h2> 
+                            <h2>ATN <br />Shop</h2> 
                             
                             <a href="?page=shop-grid" class="primary-btn">SHOP NOW</a>
                         </div>
@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/the_abbey_road.jpg">
+                        <div class="categories__item set-bg" data-setbg="img/categories/Beido">
                             <h5><a href="#">The Beatles</a></h5>
                         </div>
                     </div>

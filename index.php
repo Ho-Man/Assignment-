@@ -386,7 +386,7 @@ include_once("connection.php");
                         <ul>
                             <li>Address: 160 Road 30/4 An Phu, Ninh Kieu, Can Tho, Vietnam</li>
                             <li>Phone: +84 90 785 3006</li>
-                            <li>Email: sieungcc19186@fpt.edu.vn</li>
+                            <li>Email: manho@fpt.edu.vn</li>
                         </ul>
                     </div>
                 </div>
