@@ -34,7 +34,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="img/hero/Background.jpg">
+                    <div class="hero__item set-bg" data-setbg="img/Background.jpg">
                         <div class="hero__text">
                             <span>NEW ON</span>
                             <h2>ATN <br />Shop</h2> 
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/queen.jpg">
+                        <div class="categories__item set-bg" data-setbg="img/categories/kkle2">
                             <h5><a href="#">Queen</a></h5>
                         </div>
                     </div>
