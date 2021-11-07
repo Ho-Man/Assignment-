@@ -110,8 +110,8 @@
                                 if(isset($_GET["function"])=="del"){
                                     if(isset($_GET["id"])){
                                         $id=$_GET["id"];
-                                        $sq="SELECT pro_image from product WHERE product_id='$id'";
-                                        $res= pg_query($conn, $sq);
+                                        $sql="SELECT pro_image from product WHERE product_id='$id'";
+                                        $res= pg_query($conn, $sql);
                                         $row= pg_fetch_array($res, NULL, PGSQL_ASSOC);
                                         $filePic= $row['pro_image'];
                                         pg_query($conn,"DELETE FROM product WHERE product_id='$id'");
