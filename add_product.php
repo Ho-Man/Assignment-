@@ -82,12 +82,13 @@
 	{  
 		$id = $_POST["txtID"];
 		$proname=$_POST["txtName"];
+		$cate = $_POST["txtCate"];
 		$short=$_POST['txtShort'];
 		$detail=$_POST['txtDetail'];
 		$price=$_POST['txtPrice'];
 		$qty=$_POST['txtQty'];
         $pic=$_FILES['txtImage'];
-        $category=$_POST['CategoryList'];
+       
 		
 		$err="";
 		
@@ -114,8 +115,8 @@
 						copy($pic['tmp_name'],"img/".$pic['name']);
 						$filePic =$pic['name'];
 						$sqlstring="INSERT INTO product(
-							product_id, product_name, price, smalldesc, detaildesc, prodate, pro_qty, pro_image, cat_id)
-							VALUES('$id','$proname', $price,'$short','$detail','".date('Y-m-d H:i:s')."',$qty,'$filePic','$category')";
+							product_id, product_name, price,product_category ,smalldesc, detaildesc, pro_qty, pro_image)
+							VALUES('$id','$proname', $price,$cate,'$short','$detail',$qty,'$filePic')";
 							
 						pg_query($conn, $sqlstring);
 						echo'<li>You have add successfully</li>';
@@ -181,6 +182,12 @@
                     <label for="lblDetail" class="col-sm-2 control-label">Detail Description(*):  </label>
 							<div class="col-sm-10">
 							      <textarea type="text" name="txtDetail" id="txtDetail" class="form-control" style="height: 150px" row="4" value=""></textarea>
+							</div>
+                </div>
+				<div class="form-group">  
+                    <label for="lblQty" class="col-sm-2 control-label">Category(*):  </label>
+							<div class="col-sm-10">
+							      <input type="number" name="txtCate" id="txtCate" class="form-control" placeholder="Category" value="<?php if(isset($qty)) echo $qty?>"/>
 							</div>
                 </div>
                             
