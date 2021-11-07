@@ -10,9 +10,9 @@
                             <span>All departments</span>
                         </div>
                         <ul>
-                            <li><a href="#">Figure</a></li>
-                            <li><a href="#">Pillow</a></li>
-                            <li><a href="#">Image</a></li>
+                            <li><a href="#">Vinyl</a></li>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Cassette</a></li>
                             
                         </ul>
                     </div>
@@ -46,7 +46,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/Background.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="img/backgroundvinyl.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -82,13 +82,12 @@
 	{  
 		$id = $_POST["txtID"];
 		$proname=$_POST["txtName"];
-		$cate = $_POST["txtCate"];
 		$short=$_POST['txtShort'];
 		$detail=$_POST['txtDetail'];
 		$price=$_POST['txtPrice'];
 		$qty=$_POST['txtQty'];
         $pic=$_FILES['txtImage'];
-       
+        $category=$_POST['CategoryList'];
 		
 		$err="";
 		
@@ -107,18 +106,18 @@
 		else{
 			if($pic['type']=="image/jpg"||$pic['type']=="image/jpeg"||$pic['type']=="image/png" ||$pic['type']=="image/gif"){
 				if($pic['size']<=614400){
-					$sq="SELECT * from product where product_id='$id'or product_name='$proname'";
-                    $result= pg_query($conn,$sq);
+					$sql="SELECT * from product where product_id='$id'or product_name='$proname'";
+                    $result= pg_query($conn,$sql);
                     
 					if(pg_num_rows($result)==0)
 					{
 						copy($pic['tmp_name'],"img/".$pic['name']);
 						$filePic =$pic['name'];
 						$sqlstring="INSERT INTO product(
-							product_id, product_name, price,product_category ,smalldesc, detaildesc, pro_qty, pro_image)
-							VALUES('$id','$proname', $price,$cate,'$short','$detail',$qty,'$filePic')";
+							product_id, product_name, price, smalldesc, detaildesc, prodate, pro_qty, pro_image, cat_id)
+							VALUES('$id','$proname', $price,'$short','$detail','".date('Y-m-d H:i:s')."',$qty,'$filePic','$category')";
 							
-						pg_query($conn, $sqlstring);
+						pg_query($conn, $sql);
 						echo'<li>You have add successfully</li>';
 
 					}	
@@ -135,7 +134,7 @@
 	}
 ?>
    
-<div class="container">
+   <div class="container">
 	<h2>Adding Product</h2>
 
 	 	<form id="frmProduct" name="frmProduct" method="post" enctype="multipart/form-data" action="" class="form-horizontal" role="form">
@@ -182,12 +181,6 @@
                     <label for="lblDetail" class="col-sm-2 control-label">Detail Description(*):  </label>
 							<div class="col-sm-10">
 							      <textarea type="text" name="txtDetail" id="txtDetail" class="form-control" style="height: 150px" row="4" value=""></textarea>
-							</div>
-                </div>
-				<div class="form-group">  
-                    <label for="lblQty" class="col-sm-2 control-label">Category(*):  </label>
-							<div class="col-sm-10">
-							      <input type="number" name="txtCate" id="txtCate" class="form-control" placeholder="Category" value="<?php if(isset($qty)) echo $qty?>"/>
 							</div>
                 </div>
                             
