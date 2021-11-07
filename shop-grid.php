@@ -1,13 +1,5 @@
 
 
-
-    
-
-  
-        
-
-   
-
     <!-- Hero Section Begin -->
     <section class="hero hero-normal">
         <div class="container">
@@ -171,7 +163,7 @@
                                     <div class="latest-prdouct__slider__item">
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/keqingIm.jpg" alt="">
+                                                <img src="img/Monafi.png" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
@@ -180,7 +172,7 @@
                                         </a>
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/pillowpet.jpg" alt="">
+                                                <img src="img/HutaoIm.png" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
@@ -189,7 +181,7 @@
                                         </a>
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/firesmile.jpg" alt="">
+                                                <img src="img/Keqingfii.png" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
@@ -200,7 +192,7 @@
                                     <div class="latest-prdouct__slider__item">
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/paimonpillow.jpg" alt="">
+                                                <img src="img/paimonfi.png" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
@@ -209,7 +201,7 @@
                                         </a>
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/Imagekeqing.jpg" alt="">
+                                                <img src="img/categories/sayu.jpg" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
