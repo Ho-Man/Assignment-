@@ -37,7 +37,7 @@
                     <div class="hero__item set-bg" data-setbg="img/Background.jpg">
                         <div class="hero__text">
                             <span>NEW ON</span>
-                            <h2>ATN <br />Shop</h2> 
+                            <h2>ATN Shop</h2> 
                             
                             <a href="?page=shop-grid" class="primary-btn">SHOP NOW</a>
                         </div>
