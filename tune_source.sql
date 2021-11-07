@@ -70,10 +70,10 @@ CREATE TABLE `customer` (
 
 INSERT INTO `customer` (`Username`, `Password`, `CustName`, `gender`, `Address`, `telephone`, `email`, `CusDate`, `CusMonth`, `CusYear`, `SSN`, `ActiveCode`, `state`) VALUES
 ('abc', 'e10adc3949ba59abbe56e057f20f883e', 'NguyenBaLoc', 0, '160/4 30/4', '0123456789', '456@gmail.com', 1, 2, 1970, '', '', 0),
-('admin', 'e10adc3949ba59abbe56e057f20f883e', 'admin', 0, 'admin', '1234567890', 'admin@gmail.com', 3, 3, 2000, '', '', 1),
-('sieu123', 'e10adc3949ba59abbe56e057f20f883e', 'NguyenSieu', 0, '160/4 30/4', '1234567890', '123@gmail.com', 1, 3, 1970, '', '', 0),
-('sieu2001', '25f9e794323b453885f5181f1b624d0b', 'NguyenSieu', 0, '160/4 30/4', '0123456789', 'locnbgcc18053@fpt.edu.vn', 30, 3, 2000, '', '', 0),
-('sieu2001ct', 'e10adc3949ba59abbe56e057f20f883e', 'NguyenSieu', 0, '160/4 30/4 12311231', '0123456789', '123@gmail.commmm', 3, 4, 1971, '', '', 0);
+('ATNAdmin', 'e10adc3949ba59abbe56e057f20f883e', 'admin', 0, 'admin', '0669964448', 'admin@gmail.com', 3, 3, 2000, '', '', 1),
+('manhhha', 'e10adc3949ba59abbe56e057f20f883e', 'Manhh', 0, '160/4 30/4', '1234567890', '123@gmail.com', 1, 3, 1970, '', '', 0),
+('Cususa1', '25f9e794323b453885f5181f1b624d0b', 'Cusuaa', 0, '160/4 30/4', '0123456789', 'locnbgcc18053@fpt.edu.vn', 30, 3, 2000, '', '', 0),
+('Cuaajj', 'e10adc3949ba59abbe56e057f20f883e', 'Cuapap', 0, '160/4 30/4 12311231', '066664444', '123@gmail.commmm', 3, 4, 1971, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -109,25 +109,25 @@ CREATE TABLE `order_detail` (
 -- Table structure for table `product`
 --
 
-CREATE TABLE `product` (
-  `Product_ID` varchar(10) NOT NULL,
-  `Product_Name` varchar(30) NOT NULL,
-  `Price` bigint(20) NOT NULL,
-  `oldPrice` decimal(12,2) NOT NULL,
-  `SmallDesc` varchar(1000) NOT NULL,
-  `DetailDesc` text NOT NULL,
-  `ProDate` datetime NOT NULL,
-  `Pro_qty` int(11) NOT NULL,
-  `Pro_image` varchar(200) NOT NULL,
-  `Cat_ID` varchar(10) NOT NULL
+CREATE TABLE product (
+  Product_ID varchar,
+  Product_Name varchar,
+  Price bigint ,
+
+  SmallDesc varchar,
+  DetailDesc text ,
+  ProDate date,
+  Pro_qty int,
+  Pro_image varchar,
+  Cat_ID varchar
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`Product_ID`, `Product_Name`, `Price`, `oldPrice`, `SmallDesc`, `DetailDesc`, `ProDate`, `Pro_qty`, `Pro_image`, `Cat_ID`) VALUES
-('AB001', 'The Abbey Road', 30, '0.00', 'The Abbey Road-The Beatles', '', '2020-07-30 06:29:32', 2, 'the_abbey_road.jpg', 'C001'),
+INSERT INTO product (Product_ID, Product_Name, Price, SmallDesc, DetailDesc, ProDate, Pro_qty, Pro_image, Cat_ID) VALUES
+('AB001', 'Pillow Klee', 80, '0.00', 'Supper Klee Pillow Cute', '', '2020-07-30 06:29:32', 2, 'plklee.jpg', 'C001'),
 ('AT001', 'AUDIO-TECHNICA LP120XUSB', 500, '0.00', 'LP120XUSB', '', '2020-07-28 04:29:16', 2, 'audio_technica_1.jpg', 'C002'),
 ('AT002', 'AUDIO-TECHNICA LP60BK', 400, '0.00', 'FULLY AUTOMATIC', 'AT-LP60BK FULLY AUTOMATIC BELT-DRIVE STEREO TURNTABLE', '2020-07-28 04:34:57', 2, 'audio_technica_2.jpg', 'C002'),
 ('AT003', 'AUDIO-TECHNICA LP60BK0', 200, '0.00', 'AT-LP60BK FULLY AUTOMATIC', '', '2020-07-28 07:09:41', 2, 'audio_technica_3.jpg', 'C002'),

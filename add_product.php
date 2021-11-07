@@ -106,8 +106,8 @@
 		else{
 			if($pic['type']=="image/jpg"||$pic['type']=="image/jpeg"||$pic['type']=="image/png" ||$pic['type']=="image/gif"){
 				if($pic['size']<=614400){
-					$sql="SELECT * from product where product_id='$id'or product_name='$proname'";
-                    $result= pg_query($conn,$sql);
+					$sq="SELECT * from product where product_id='$id'or product_name='$proname'";
+                    $result= pg_query($conn,$sq);
                     
 					if(pg_num_rows($result)==0)
 					{
@@ -117,7 +117,7 @@
 							product_id, product_name, price, smalldesc, detaildesc, prodate, pro_qty, pro_image, cat_id)
 							VALUES('$id','$proname', $price,'$short','$detail','".date('Y-m-d H:i:s')."',$qty,'$filePic','$category')";
 							
-						pg_query($conn, $sql);
+						pg_query($conn, $sqlstring);
 						echo'<li>You have add successfully</li>';
 
 					}	
@@ -134,7 +134,7 @@
 	}
 ?>
    
-   <div class="container">
+<div class="container">
 	<h2>Adding Product</h2>
 
 	 	<form id="frmProduct" name="frmProduct" method="post" enctype="multipart/form-data" action="" class="form-horizontal" role="form">
