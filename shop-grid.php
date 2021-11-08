@@ -270,7 +270,7 @@
                                         <div class="product__discount__item__text">
                                             <span> </span>
                                             <h5><a href="?page=shop-details&&id=<?php echo  $row['product_id'] ?>"><?php echo $row["product_name"] ?></a></h5>
-                                            <div class="product__item__price"><?php echo $row["price"]  ?>đ </div>
+                                            <div class="product__item__price"><?php echo $row["price"]  ?>$ </div>
                                         </div>
                                     </div>
                                 </div>
@@ -336,7 +336,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="?page=shop-details&&id=<?php echo  $row['product_id'] ?>"><?php echo $row["product_name"] ?></a></h6>
-                                    <h5><?php echo $row["price"] ?>đ</h5>
+                                    <h5><?php echo $row["price"] ?>$</h5>
                                 </div>
                             </div>
                         </div>
