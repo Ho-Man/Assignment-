@@ -104,14 +104,14 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="product__details__text">
-                        <h3><?php echo $row["Product_Name"]; ?></h3>
+                        <h3><?php echo $row["product_name"]; ?></h3>
                         <div class="product__details__rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half-o"></i>
-                            <span>(18 reviews)</span>
+                            <span>(180 reviews)</span>
                         </div>
                         <div class="product__details__price">$<?php echo $row["price"]; ?></div>
                         <p><?php echo $row["SmallDesc"]; ?></p>
@@ -127,7 +127,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
                         </form>
                         <ul>
-                            <li><b>Try on</b> <a href="https://vi.chiasenhac.vn/nghe-album/abbey-road-xssw0sbwq9n4q9.html" target="_blank">CSN</a></li>
+                            <li><b>Ìnormation product</b> <span>Genuine product</span></li>
                             <li><b>Availability</b> <span>In Stock</span></li>
                             <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
                             <li><b>Weight</b> <span>0.5 kg</span></li>
@@ -169,14 +169,14 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Products Infomation</h6>
-                                    <p>Let It Be is the Beatles' last studio album, released on May 8, 1970 by Apple Records. This is also the only album that George Martin is not a producer but instead is Phil Spector. Along with the Yellow Submarine, this is a rare album by The Beatles that Rolling Stone magazine rated negative on quality. The album includes a number of popular songs, such as "Let It Be", "Get Back", "Across the Universe" and "The Long and Winding Road".</p>
+                                    <p>"Genuine product manufactured by Mihoyo and imported into ATN Company."</p>
                                     
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Products Infomation</h6>
-                                    <p>Let It Be is the Beatles' last studio album, released on May 8, 1970 by Apple Records. This is also the only album that George Martin is not a producer but instead is Phil Spector. Along with the Yellow Submarine, this is a rare album by The Beatles that Rolling Stone magazine rated negative on quality. The album includes a number of popular songs, such as "Let It Be", "Get Back", "Across the Universe" and "The Long and Winding Road".</p>
+                                    <p>"Genuine product manufactured by Mihoyo and imported into ATN Company."</p>
                                 </div>
                             </div>
                         </div>
