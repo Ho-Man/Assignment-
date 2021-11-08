@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Pillow Shop</h2>
+                        <h2>ATN Shop</h2>
                         <div class="breadcrumb__option">
                             <a href="?page=content">Home</a>
                             <span>Shop</span>
@@ -171,7 +171,7 @@
                                     <div class="latest-prdouct__slider__item">
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/beidofu.jpg" alt="">
+                                                <img src="img/latest-product/SaraIma.png" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
