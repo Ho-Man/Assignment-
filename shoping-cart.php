@@ -144,7 +144,7 @@
                                 {
                                     foreach($_SESSION['cart'] as $key => $value):
                                         $item_price = $value['price'] * $value['qty'];
-                                        $total += $item_price;
+                                        $total = $item_price;
                                         
                                 ?>
                                 <tr>
