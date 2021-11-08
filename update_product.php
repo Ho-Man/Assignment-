@@ -37,7 +37,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+84 90 785 3006</h5>
+                                <h5>+84 15 151 0041</h5>
                                 <span>support 24/7 time</span>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/toybackground.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="img/Background.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
