@@ -202,10 +202,10 @@
 				{
 					if($pic['size']<=614400)
 					{
-						// $sql="select * from Product where Product_ID='$id' and Product_Name='$proname'";
-						// $result = mysqli_query($conn, $sql);
-						// if(mysqli_num_rows($result)=="0")
-						// {
+						  $sql="select * from product where product_id='$id' and product_name='$proname'";
+						  $result = pg_query($conn, $sql);
+						  if(pg_num_rows($result)=="0")
+						  {
 							copy($pic['tmp_name'], "img/".$pic['name']);
 							$filepic = $pic['name'];
 							
@@ -213,11 +213,11 @@
 							prodate='".date('Y-m-d H:i:s')."' where product_id ='$id'";
 							pg_query($conn,$sqlString);
 							echo '<meta http-equiv="refresh" content="0;URL=?page=pm"';	
-						// }
-						// else
-						// {
-						// 	echo "Duplicate name</br>";
-						// }
+						  }
+						  else
+						  {
+						  	echo "Duplicate name</br>";
+						  }
 					}
 					else
 					{
