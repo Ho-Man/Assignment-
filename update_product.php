@@ -72,8 +72,8 @@
 	{
 		$sqlString = "SELECT cat_id, cat_name from category";
 		$result = pg_query($conn, $sqlString);
-		echo "<SELECT name ='CategoryList' class='from-control'>
-			<option value='0'>Choose Category</option>";
+		echo "<SELECT name ='categorylist' class='from-control'>
+			<option value='0'>choose category</option>";
 			while ($row=pg_fetch_array($result,NULL, PGSQL_ASSOC))
 			{
 				if($row['cat_id']==$selectedValue)
