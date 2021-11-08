@@ -88,7 +88,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
                             <img class="product__details__pic__item--large"
-                                src="img/<?php echo $row["Pro_image"]; ?>" alt="">
+                                src="img/<?php echo $row["pro_image"]; ?>" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
                             <img data-imgbigurl="img/product/details/Sucrofi.png"
