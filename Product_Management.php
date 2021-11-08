@@ -1,9 +1,3 @@
-
-
-
- 
-
-    
 <script>
         function deleteConfirm(){
             if(confirm("Are you sure?")){
@@ -25,9 +19,10 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
-                            
-                            
+                            <span>All Departments</span>
+                        <ul>
+                            <?php Department($conn); ?>
+                        </ul>
                         </div>
                         
                         <ul>
@@ -83,7 +78,7 @@
             </div>
         </div>
     </section>
-    <!-- Breadcrumb Section End -->
+<!-- Breadcrumb Section End -->
 
     <!-- Product Management Section Begin -->
     <section class="shoping-cart spad">
@@ -100,7 +95,7 @@
                                     
                                     <th>Price</th>
                                     <th>Quantity</th>
-                                    <th><a href="?page=addp">Add</a></th>
+                                    <th><a href="?page=addp">Add Product</a></th>
                                     
                                     
                                 </tr>
@@ -110,8 +105,8 @@
                                 if(isset($_GET["function"])=="del"){
                                     if(isset($_GET["id"])){
                                         $id=$_GET["id"];
-                                        $sql="SELECT pro_image from product WHERE product_id='$id'";
-                                        $res= pg_query($conn, $sql);
+                                        $sq="SELECT pro_image from product WHERE product_id='$id'";
+                                        $res= pg_query($conn, $sq);
                                         $row= pg_fetch_array($res, NULL, PGSQL_ASSOC);
                                         $filePic= $row['pro_image'];
                                         pg_query($conn,"DELETE FROM product WHERE product_id='$id'");
@@ -136,7 +131,7 @@
                                     from product, category where product.cat_id = category.cat_id and '$id'=category.cat_id ");
             
                                 }else{
-                                $result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
+$result = pg_query($conn,"SELECT product.product_id, product.product_name, product.price, product.pro_qty, product.pro_image, category.cat_name 
                                     from product, category where product.cat_id = category.cat_id ");
                                 }
                                 while($row=pg_fetch_array($result, NULL, PGSQL_ASSOC)) { 
@@ -185,10 +180,4 @@
             
         </div>
     </section>
-    <!-- Shoping Cart Section End -->
-    
-	
-	
-
-   
-    
+    <!-- Shopping Cart Section End -->
