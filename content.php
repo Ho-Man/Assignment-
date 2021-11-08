@@ -74,8 +74,18 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/bomb.jpg">
-                            <h5><a href="#">Bomb pillow</a></h5>
+                        <div class="categories__item set-bg" data-setbg="img/categories/jeanimg.png">
+                            <h5><a href="#">Jean Image</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/hutaofi.png">
+                            <h5><a href="#">Hutao Figure</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/ganyuimg.png">
+                            <h5><a href="#">Ganyu Image</a></h5>
                         </div>
                     </div>
                 </div>
