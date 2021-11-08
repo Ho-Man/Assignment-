@@ -210,7 +210,7 @@
 							$filepic = $pic['name'];
 							
 							$sqlString = "UPDATE product set product_name ='$proname', price = '$price', smalldesc ='$short', detaildesc ='$detail', pro_qty='$qty', pro_image='$filepic', cat_id='$cat', 
-							ProDate='".date('Y-m-d H:i:s')."' where product_id ='$id'";
+							prodate='".date('Y-m-d H:i:s')."' where product_id ='$id'";
 							pg_query($conn,$sqlString);
 							echo '<meta http-equiv="refresh" content="0;URL=?page=pm"';	
 						// }
