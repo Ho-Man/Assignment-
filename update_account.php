@@ -87,7 +87,7 @@
 
 	?>
 <div class="container">
-        <h2>Member UpdateProfile</h2>
+        <h2>Member Update Profile</h2>
 			 	<form id="form1" name="form1" method="post" action="" class="form-horizontal" role="form">
 					<div class="form-group">
 						    
