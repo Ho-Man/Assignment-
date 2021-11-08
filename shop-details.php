@@ -91,13 +91,13 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                                 src="img/<?php echo $row["Pro_image"]; ?>" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
+                            <img data-imgbigurl="img/product/details/Sucrofi.png"
                                 src="img/product/details/plklee.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
-                                src="img/product/details/plventi" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
+                            <img data-imgbigurl="img/product/details/zhonglipi.png"
+                                src="img/product/details/plventi.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/SucroIm.jpg"
                                 src="img/product/details/pltraveler.jpeg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
+                            <img data-imgbigurl="img/product/details/plklee.jpg"
                                 src="img/product/details/comaytoy.jpg" alt="">
                         </div>
                     </div>
