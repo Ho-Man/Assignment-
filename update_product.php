@@ -231,20 +231,20 @@
 			}
 			else
 			{
-				// $sql="SELECT * from Product where Product_ID='$id' and Product_Name='$proname'";
-				// $result = mysqli_query($conn, $sql);
-				// if(mysqli_num_rows($result)=="0")
-				// {
+				$sql="SELECT * from product where product_id='$id' and product_name='$proname'";
+				 $result = pg_query($conn, $sql);
+				if(pg_num_rows($result)=="0")
+				 {
 					$sqlString = "UPDATE product set product_name ='$proname', price = '$price', smalldesc ='$short',  detaildesc ='$detail', pro_qty='$qty', cat_id='$cat', 
 					prodate='".date('Y-m-d H:i:s')."' where product_id ='$id'";
 					pg_query($conn,$sqlString);
 					echo '<meta http-equiv="refresh" content="0;URL =?page=pm"';	
 					
-				// }
-				// else
-				// {
-				// 	echo "Duplicate name</br>";
-				// }
+				}
+				else
+				{
+					echo "Duplicate name</br>";
+				}
 			}
 		}
 	}
