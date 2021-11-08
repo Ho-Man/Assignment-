@@ -114,7 +114,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                             <span>(180 reviews)</span>
                         </div>
                         <div class="product__details__price">$<?php echo $row["price"]; ?></div>
-                        <p><?php echo $row["SmallDesc"]; ?></p>
+                        <p><?php echo $row["smalldesc"]; ?></p>
                         <form method="POST">
                             <div class="product__details__quantity">
                                 <div class="quantity">
@@ -161,7 +161,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__tab__desc">
-                                    <h6><?php echo $row["DetailDesc"]; ?></h6>
+                                    <h6><?php echo $row["detaildesc"]; ?></h6>
                                     <p></p>
                                         
                                 </div>
@@ -245,7 +245,7 @@ $row=pg_fetch_array($result, NULL, PGSQL_ASSOC);
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/gostpi.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="img/product/ghostpi.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
