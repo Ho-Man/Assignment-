@@ -116,7 +116,7 @@ include_once("connection.php");
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> manho@fpt.edu.vn</li>
+                <li><i class="fa fa-envelope"></i>ATNCompany@gmail,com</li>
                 <li>Free Shipping for all Order of $100</li>
             </ul>
         </div>
@@ -143,7 +143,7 @@ include_once("connection.php");
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> manho@fpt.edu.vn</li>
+                                <li><i class="fa fa-envelope"></i>ATNCompany@gmail,com</li>
                                 <li>Free Shipping for all Order of $999</li>
                             </ul>
                         </div>
@@ -393,7 +393,7 @@ include_once("connection.php");
                         <ul>
                             <li>Address: 160 Road 30/4 An Phu, Ninh Kieu, Can Tho, Vietnam</li>
                             <li>Phone:  +84 22 111 644</li>
-                            <li>Email: manho@fpt.edu.vn</li>
+                            <li>Email:ATNCompany@gmail,com</li>
                         </ul>
                     </div>
                 </div>
