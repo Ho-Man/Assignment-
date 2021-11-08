@@ -95,7 +95,7 @@
                                     
                                     <th>Price</th>
                                     <th>Quantity</th>
-                                    <th><a href="?page=addp">Add Product</a></th>
+                                    <th><a href="?page=addp">Add</a></th>
                                     
                                     
                                 </tr>

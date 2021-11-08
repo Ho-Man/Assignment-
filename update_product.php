@@ -6,11 +6,11 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
-                            
-                            
+                            <span>All Department</span>
                         </div>
-                        
+                        <ul>
+						    <?php Department($conn); ?>
+                        </ul>
                         <ul>
                         <li ><a  href="?page=pm">All</a></li>
 
@@ -37,7 +37,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5> +84 22 111 644</h5>
+                                <h5>+84 90 785 3006</h5>
                                 <span>support 24/7 time</span>
                             </div>
                         </div>
@@ -49,14 +49,14 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/Background.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="img/toybackground.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
                         <h2>Products Management</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home </a>
+                            <a href="./index.html">Home</a>
                             <span>Products Management</span>
                         </div>
                     </div>
@@ -72,8 +72,8 @@
 	{
 		$sqlString = "SELECT cat_id, cat_name from category";
 		$result = pg_query($conn, $sqlString);
-		echo "<SELECT name ='categorylist' class='from-control'>
-			<option value='0'>choose category</option>";
+echo "<SELECT name ='CategoryList' class='from-control'>
+			<option value='0'>Choose Category</option>";
 			while ($row=pg_fetch_array($result,NULL, PGSQL_ASSOC))
 			{
 				if($row['cat_id']==$selectedValue)
@@ -145,7 +145,7 @@
                             
                 <div class="form-group">   
                     <label for="lblDetail" class="col-sm-5 control-label">Detail Description(*):  </label>
-							<div class="col-sm-10">
+<div class="col-sm-10">
 							      <textarea type="text" name="txtDetail" id="txtDetail" class="form-control" style="height: 150px" row="4" value="<?php echo $detail?>"></textarea>
 							</div>
                 </div>
@@ -202,22 +202,22 @@
 				{
 					if($pic['size']<=614400)
 					{
-						  $sql="select * from product where product_id='$id' and product_name='$proname'";
-						  $result = pg_query($conn, $sql);
-						  if(pg_num_rows($result)=="0")
-						  {
+						// $sql="select * from Product where Product_ID='$id' and Product_Name='$proname'";
+						// $result = mysqli_query($conn, $sql);
+						// if(mysqli_num_rows($result)=="0")
+						// {
 							copy($pic['tmp_name'], "img/".$pic['name']);
 							$filepic = $pic['name'];
 							
-							$sqlString = "UPDATE product set product_name ='$proname', price = '$price', smalldesc ='$short', detaildesc ='$detail', pro_qty='$qty', pro_image='$filepic', cat_id='$cat', 
-							prodate='".date('Y-m-d H:i:s')."' where product_id ='$id'";
+							$sqlString = "UPDATE product set product_name ='$proname', price = '$price', smalldesc ='$short', detaildesc ='$detail', pro_qty ='$qty', pro_image ='$filepic', cat_id ='$cat', 
+							prodate ='".date('Y-m-d H:i:s')."' where product_id ='$id'";
 							pg_query($conn,$sqlString);
 							echo '<meta http-equiv="refresh" content="0;URL=?page=pm"';	
-						  }
-						  else
-						  {
-						  	echo "Duplicate name</br>";
-						  }
+						// }
+						// else
+						// {
+						// 	echo "Duplicate name</br>";
+						// }
 					}
 					else
 					{
@@ -231,20 +231,20 @@
 			}
 			else
 			{
-				$sql="SELECT * from product where product_id='$id' and product_name='$proname'";
-				 $result = pg_query($conn, $sql);
-				if(pg_num_rows($result)=="0")
-				 {
+				// $sql="SELECT * from Product where Product_ID='$id' and Product_Name='$proname'";
+				// $result = mysqli_query($conn, $sql);
+				// if(mysqli_num_rows($result)=="0")
+// {
 					$sqlString = "UPDATE product set product_name ='$proname', price = '$price', smalldesc ='$short',  detaildesc ='$detail', pro_qty='$qty', cat_id='$cat', 
 					prodate='".date('Y-m-d H:i:s')."' where product_id ='$id'";
 					pg_query($conn,$sqlString);
 					echo '<meta http-equiv="refresh" content="0;URL =?page=pm"';	
 					
-				}
-				else
-				{
-					echo "Duplicate name</br>";
-				}
+				// }
+				// else
+				// {
+				// 	echo "Duplicate name</br>";
+				// }
 			}
 		}
 	}
@@ -258,5 +258,3 @@
 		
 	}
 ?>
-
-
