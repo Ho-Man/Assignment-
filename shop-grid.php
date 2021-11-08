@@ -189,7 +189,7 @@
                                         </a>
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/imagekeqing.jpg" alt="">
+                                                <img src="img/latest-product/keqingIm.jpg" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6></h6>
