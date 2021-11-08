@@ -54,7 +54,7 @@
         </div>
     </section>
     <!-- Hero Section End -->
-<section class="breadcrumb-section set-bg" data-setbg="img/backgroundvinyl.jpg">
+<section class="breadcrumb-section set-bg" data-setbg="img/Background.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -183,7 +183,7 @@
                                   <select name="slYear" id="slYear" class="form-control">
                                     <option value="<?php echo $CusYear;?>"><?php echo $CusYear;?></option>
                                     <?php
-                                        for($i=1970;$i<=2020;$i++)
+                                        for($i=1970;$i<=2020;$i--)
                                          {
                                              echo "<option value='".$i."'>".$i."</option>";
                                          }
