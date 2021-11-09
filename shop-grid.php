@@ -132,25 +132,25 @@
                             <h4>Popular</h4>
                             <div class="sidebar__item__size">
                                 <label for="33RPM">
-                                    33RPM
+                                    Hot
                                     <input type="radio" id="33RPM">
                                 </label>
                             </div>
                             <div class="sidebar__item__size">
                                 <label for="45RPM">
-                                    45RPM
+                                    New
                                     <input type="radio" id="45RPM">
                                 </label>
                             </div>
                             <div class="sidebar__item__size">
                                 <label for="Signature">
-                                    Signature
+                                    Figure
                                     <input type="radio" id="Signature">
                                 </label>
                             </div>
                             <div class="sidebar__item__size">
                                 <label for="Trend">
-                                    Trend
+                                Most Prominent
                                     <input type="radio" id="Trend">
                                 </label>
                             </div>
