@@ -88,7 +88,7 @@
                     <div class="contact__widget">
                         <span class="icon_mail_alt"></span>
                         <h4>Email</h4>
-                        <p>manho@fpt.edu.vn</p>
+                        <p>ATNComapny@gmail.com</p>
                     </div>
                 </div>
             </div>

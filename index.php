@@ -392,8 +392,8 @@ include_once("connection.php");
                         </div>
                         <ul>
                             <li>Address: 160 Road 30/4 An Phu, Ninh Kieu, Can Tho, Vietnam</li>
-                            <li>Phone:  +84 22 111 644</li>
-                            <li>Email:ATNCompany@gmail,com</li>
+                            <li>Phone:  +84 77 444 6678</li>
+                            <li>Email:ATNCompany@gmail.com</li>
                         </ul>
                     </div>
                 </div>
