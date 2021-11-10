@@ -189,7 +189,7 @@ ol {
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #190d1809;
 		border-left-color: transparent;
 	}
 	100% {
@@ -208,7 +208,7 @@ ol {
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #190d1809;
 		border-left-color: transparent;
 	}
 	100% {
