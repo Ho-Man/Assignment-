@@ -55,10 +55,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Category Management</h2>
+                        <h2>Category Manage</h2>
                         <div class="breadcrumb__option">
                             <a href="./index.html">Home</a>
-                            <span>Category Management</span>
+                            <span>Category Manage</span>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
     
 	
         <form name="frm" method="post" action="">
-        <h1>Category Management</h1>
+        <h1>Category Manage</h1>
         <p>
         <i class="fa fa-plus"></i> <a href="?page=addc"> Add</a>
         </p>
