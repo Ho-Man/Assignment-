@@ -121,6 +121,7 @@ echo "<SELECT name ='BranchList' class='from-control'>
 		$qty = $row['pro_qty'];
 		$pic = $row['pro_image'];
 		$category = $row['cat_id'];
+		$branch = $row['branch_name'];
 ?>
 <div class="container">
 	<h2>Updating Product</h2>
