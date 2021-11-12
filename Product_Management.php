@@ -149,7 +149,7 @@
                                     </td>
                                     <td class="shoping__cart__item">
                                         
-                                        <h5><?php echo $row["branc_name"]; ?></h5>
+                                        <h5><?php echo $row["branch_name"]; ?></h5>
                                     </td>
                                     
                                     <td class="shoping__cart__price">
