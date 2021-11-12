@@ -91,11 +91,11 @@ echo "<SELECT name ='CategoryList' class='from-control'>
 	{
 		$sqlString = "SELECT branch_id, branch_name from branch";
 		$result = pg_query($conn, $sqlString);
-echo "<SELECT name ='BranchList' class='from-control'>
+		echo "<SELECT name ='BranchList' class='from-control'>
 			<option value='0'>Choose Branch</option>";
 			while ($row=pg_fetch_array($result,NULL, PGSQL_ASSOC))
 			{
-				if($row['branch_id']==$selectedValue)
+				if($row['branch_name']==$selectedValue)
 				{
 					echo "<option value ='".$row['branch_id']."' selected>".$row['branch_name']."</option>";
 				}
@@ -121,7 +121,7 @@ echo "<SELECT name ='BranchList' class='from-control'>
 		$qty = $row['pro_qty'];
 		$pic = $row['pro_image'];
 		$category = $row['cat_id'];
-		$branch = $row['branch_name'];
+		$branch = $row['branch'];
 ?>
 <div class="container">
 	<h2>Updating Product</h2>
@@ -158,7 +158,7 @@ echo "<SELECT name ='BranchList' class='from-control'>
 				 <div class="form-group">   
                     <label for="" class="col-sm-5 control-label">Branch category(*):  </label>
 							<div class="col-sm-10">
-								<?php bind_Branch_List($conn, $category); ?>
+								<?php bind_Branch_List($conn, $branch); ?>
 							      
 							</div>
                 </div>  
@@ -211,7 +211,7 @@ echo "<SELECT name ='BranchList' class='from-control'>
 		$qty = $_POST['txtQty'];
 		$pic = $_FILES['txtImage'];
 		$cat = $_POST['CategoryList'];
-		
+		$branch = $_POST['BranchList'];
 		$err = "";
 
 		
@@ -232,7 +232,7 @@ echo "<SELECT name ='BranchList' class='from-control'>
 							copy($pic['tmp_name'], "img/".$pic['name']);
 							$filepic = $pic['name'];
 							
-							$sqlString = "UPDATE product set product_name ='$proname', price = '$price', smalldesc ='$short', detaildesc ='$detail', pro_qty ='$qty', pro_image ='$filepic', cat_id ='$cat', 
+							$sqlString = "UPDATE product set product_name ='$proname', price = '$price', smalldesc ='$short', detaildesc ='$detail', pro_qty ='$qty', pro_image ='$filepic', cat_id ='$cat', branch_name = '$branch', 
 							prodate ='".date('Y-m-d H:i:s')."' where product_id ='$id'";
 							pg_query($conn,$sqlString);
 							echo '<meta http-equiv="refresh" content="0;URL=?page=pm"';	
