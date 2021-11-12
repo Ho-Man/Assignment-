@@ -91,8 +91,7 @@
                                 <tr>
                                     <th class="shoping__product">Products</th>
                                     <th class="shoping__product">Category</th>
-                                    
-                                    
+                                    <th>Branch </th>
                                     <th>Price</th>
                                     <th>Quantity</th>
                                     <th><a href="?page=addp">Add</a></th>
