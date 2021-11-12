@@ -51,7 +51,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
                         <h2>Register</h2>
-                        <div class="breadcrumb__option">
+                        <div class="breadcrumb__option"> 
                             <a href="?page=content">Home</a>
                             <span>Register</span>
                         </div>
